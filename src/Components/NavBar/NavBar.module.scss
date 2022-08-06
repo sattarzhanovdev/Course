@@ -1,0 +1,49 @@
+.navbar{
+  width: 90%;
+  padding: 15px 5%;
+  background: #171717;
+  box-shadow: 0 0 10px #3e3e3e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  .logo{
+    h2{
+      color: white;
+      margin: 0;
+    }
+  }
+  .list{
+    display: flex;
+    list-style: none;
+    li{
+      a{
+        text-decoration: none;
+        color: white;
+        margin-right: 25px;
+        
+        &:hover{
+          color: orange;
+        }
+      }
+    }
+  }
+  .contact{
+    button{
+      width: 250px;
+      height: 45px;
+      color: orange;
+      background: none;
+      border: 2px solid orange;
+      border-radius: 50px;
+      cursor: pointer;
+
+      &:hover{
+        box-shadow: 0 0 10px orange;
+        text-shadow: 0 0 10px orange;
+      }
+    }
+  }
+}

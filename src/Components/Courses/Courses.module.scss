@@ -1,0 +1,89 @@
+.courses{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2{
+    color: white;
+    letter-spacing: 1px;
+    margin: 0;
+  }
+  .courses_list{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    button{
+      margin-right: 15px;
+      padding: 10px 35px;
+      background: none;
+      color: orange;
+      border: 2px solid orange;
+      border-radius: 50px;
+      cursor: pointer;
+
+      &:hover{
+        box-shadow: 0 0 10px orange;
+        text-shadow: 0 0 10px orange;
+      }
+    }
+  }
+  .courses_cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    gap: 25px;
+    position: relative;
+    flex-wrap: wrap;
+    .card{
+      width: 350px;
+      height: 350px;
+      background: orange;
+      border-radius: 25px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      .card_img{
+        position: absolute;
+        top: -80px;
+        img {
+          width: 150px;
+          height: 150px;
+          object-fit: cover;
+          background: #3e3e3e;
+          border: 10px solid #171717;
+          border-radius: 50%;
+        }
+      }
+      .card_body{
+        list-style: none;
+        li{
+          font-size: 20px;
+          margin-bottom: 5px;
+          display: flex;
+          align-items: center;
+          span{
+            font-size: 25px;
+            color: #171717;
+            margin-right: 10px;
+          }
+        }
+      }
+      .card_footer{
+        position: absolute;
+        bottom: 25px;
+        button{
+          width: 300px;
+          height: 45px;
+          border: 0;
+          border-radius: 10px;
+          cursor: pointer;
+          &:hover{
+            box-shadow: 0 0 10px orangered;
+          }
+        }
+      }
+    }
+  }
+}

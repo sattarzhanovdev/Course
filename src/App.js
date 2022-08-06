@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import NavBar from "./Components/NavBar";
+import './App.css'
+import Banner from "./Components/Banner";
+import axios from 'axios'
+import Courses from "./Components/Courses";
+import Application from "./Components/Applicaton";
+import * as firebase from 'firebase/app';
 
-function App() {
+axios.defaults.baseURL = 'https://6252f38569af39728b5517f3.mockapi.io/api/v1'
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <React.Fragment>
+      <header>
+        <NavBar />
       </header>
-    </div>
-  );
+
+      <main>
+        <Banner />
+        <Courses />
+        <Application />
+      </main>
+    </React.Fragment>
+  )
 }
 
 export default App;
