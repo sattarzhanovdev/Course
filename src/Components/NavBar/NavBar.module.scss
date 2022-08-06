@@ -46,4 +46,21 @@
       }
     }
   }
+
+  .bars{
+    li{
+      color: white;
+      list-style: none;
+      font-size: 25px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .list{
+      display: none;
+    }
+    .contact{
+      display: none;
+    }
+  }
 }

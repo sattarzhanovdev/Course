@@ -9,8 +9,18 @@
     h1{
       color: white;
       letter-spacing: 1px;
-      span{
+      display: flex;
+      align-items: flex-end;
+      p{
         color: orange;
+        overflow: hidden;
+        border-right: 1px solid #e29508;
+        white-space: nowrap;
+        margin: 0 15px;
+        letter-spacing: .17em;
+        animation:
+                typing 3.5s steps(30, end),
+                blink-caret .7s step-end infinite;
       }
     }
     .buttons{
@@ -49,9 +59,44 @@
     }
   }
 
+  @media screen and (max-width: 1024px){
+    .right{
+      img{
+        width: 300px;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .right{
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    .left{
+      h1{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        p{
+          margin: 0;
+        }
+      }
+    }
+  }
 }
 
 @keyframes typing {
-  from { width: 0 ; opacity: 1 }
-  to { width: 100% ; opacity: 1}
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent
+  }
+  50% {
+    border-color: orange
+  }
 }

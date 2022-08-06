@@ -86,4 +86,29 @@
       }
     }
   }
+  
+  @media screen and (max-width: 425px) {
+    .courses_cards{
+      gap: 100px;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .courses{
+    .courses_list{
+      width: 100%;
+      overflow-x: scroll;
+    }
+    .courses_cards{
+      .card{
+        width: 300px;
+        .card_footer{
+          button{
+            width: 270px;
+          }
+        }
+      }
+    }
+  }
 }

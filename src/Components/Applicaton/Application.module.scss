@@ -13,6 +13,7 @@
     width: 1300px;
     height: 150px;
     background: #3e3e3e;
+    border-radius: 15px;
     div {
       input {
         width: 270px;
@@ -52,6 +53,64 @@
         margin: 0;
         position: absolute;
         left: 0;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .send_application{
+      width: 1000px;
+      height: 200px;
+      flex-wrap: wrap;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .send_application{
+      width: 700px;
+      height: 350px;
+      flex-direction: column;
+      div{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        input{
+          margin: 15px 0;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 425px){
+    .send_application{
+      width: 400px;
+    }
+  }
+
+}
+
+@media screen and (max-width: 375px){
+  .application{
+    h2{
+      text-align: center;
+    }
+    .send_application{
+      width: 350px;
+    }
+  }
+}
+
+
+@media screen and (max-width: 320px){
+  .application{
+    h2{
+      text-align: center;
+    }
+    .send_application{
+      width: 300px;
+      div{
+        input{
+          width: 250px;
+        }
       }
     }
   }

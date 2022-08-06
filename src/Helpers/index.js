@@ -11,3 +11,17 @@ export const scrollCourses = () => {
     behavior: 'smooth'
   })
 }
+
+export const scrollAboutUs = () => {
+  window.scroll({
+    top: 1000,
+    behavior: 'smooth'
+  })
+}
+
+export const scrollContacts = () => {
+  window.scroll({
+    top: 2000,
+    behavior: 'smooth'
+  })
+}

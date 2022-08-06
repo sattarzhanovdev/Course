@@ -1,0 +1,44 @@
+.aboutToCenter{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 50px 0;
+  h1{
+    color: white;
+  }
+  .about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1300px;
+    height: 500px;
+    background: #3e3e3e;
+    border-radius: 15px;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .about{
+      width: 1000px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .about{
+      width: 700px;
+    }
+  }
+  @media screen and (max-width: 425px) {
+    .about{
+      width: 400px;
+    }
+  }
+  @media screen and (max-width: 375px) {
+    .about{
+      width: 350px;
+    }
+  }
+  @media screen and (max-width: 320px) {
+    .about{
+      width: 300px;
+    }
+  }
+}

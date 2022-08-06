@@ -2,8 +2,12 @@ import React from 'react'
 import cls from './NavBar.module.scss'
 import {Link} from "react-router-dom";
 import {navList} from "../../Utils";
+import ContactsSide from "./ContactsSide";
+import {FaBars} from "react-icons/fa";
 
 const NavBar = () => {
+  const [ active, setActive ] = React.useState(false)
+
   return (
     <div className={cls.navbar}>
       <div className={cls.logo}>
@@ -23,10 +27,18 @@ const NavBar = () => {
         }
       </ul>
       <div className={cls.contact}>
-        <button>
+        <button onClick={() => setActive(!active)}>
           Связаться с нами
         </button>
       </div>
+
+      <div className={cls.bars}>
+        <li>
+          <FaBars />
+        </li>
+      </div>
+
+      <ContactsSide active={active} setActive={setActive} />
     </div>
   )
 }

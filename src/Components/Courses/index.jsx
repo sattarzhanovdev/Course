@@ -34,7 +34,10 @@ const Courses = () => {
       <div className={cls.courses_cards}>
         {
           filteredBase ? filteredBase  : courses.map(({id, title, img, time, format}) => (
-            <div className={cls.card}>
+            <div
+              className={cls.card}
+              key={id}
+            >
               <div className={cls.card_img}>
                 <img src={img} alt={title} />
               </div>
