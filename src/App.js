@@ -5,7 +5,6 @@ import Banner from "./Components/Banner";
 import axios from 'axios'
 import Courses from "./Components/Courses";
 import Application from "./Components/Applicaton";
-import * as firebase from 'firebase/app';
 import Footer from "./Components/Footer";
 import AboutUs from "./Components/About us";
 

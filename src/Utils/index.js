@@ -9,13 +9,13 @@ export const navList = [
 ]
 
 export const coursesList = [
-  {id: 1, title: 'Все курсы', type: 'all'},
-  {id: 2, title: 'Разработка', type: 'development'},
+  {id: 1, title: 'Все курсы', typeOfCourse: 'all'},
+  {id: 2, title: 'Разработка', typeOfCourse: 'development'},
 ]
 
 export const courses = [
-  {id: 1, title: 'Front-end разработка', img: 'https://miro.medium.com/max/1200/1*WA_9JsyqFkge2HwYKcdJQw.png', time: '9 месяцев', format: 'Онлайн', type: 'development'},
-  {id: 2, title: 'Back-end разработка', img: 'https://media.zeemly.com/media/product/django.png', time: '9 месяцев', format: 'Онлайн', type: 'development'},
+  {id: 1, title: 'Front-end разработка', img: 'https://miro.medium.com/max/1200/1*WA_9JsyqFkge2HwYKcdJQw.png', time: '9 месяцев', format: 'Онлайн', typeOfCourse: 'development'},
+  {id: 2, title: 'Back-end разработка', img: 'https://media.zeemly.com/media/product/django.png', time: '9 месяцев', format: 'Онлайн', typeOfCourse: 'development'},
 ]
 
 export const contacts = [

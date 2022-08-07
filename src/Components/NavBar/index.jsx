@@ -4,9 +4,11 @@ import {Link} from "react-router-dom";
 import {navList} from "../../Utils";
 import ContactsSide from "./ContactsSide";
 import {FaBars} from "react-icons/fa";
+import SideBar from "./SideBar";
 
 const NavBar = () => {
   const [ active, setActive ] = React.useState(false)
+  const [ sideActive, setSideActive ] = React.useState(false)
 
   return (
     <div className={cls.navbar}>
@@ -33,12 +35,13 @@ const NavBar = () => {
       </div>
 
       <div className={cls.bars}>
-        <li>
+        <li onClick={() => setSideActive(true)}>
           <FaBars />
         </li>
       </div>
 
       <ContactsSide active={active} setActive={setActive} />
+      <SideBar sideActive={sideActive} setSideActive={setSideActive} />
     </div>
   )
 }

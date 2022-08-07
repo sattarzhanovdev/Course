@@ -1,6 +1,6 @@
 import React from 'react'
 import cls from './Banner.module.scss'
-import {scrollContacts} from "../../Helpers";
+import {scrollGetConsultation} from "../../Helpers";
 
 const Banner = () => {
   return (
@@ -8,10 +8,10 @@ const Banner = () => {
       <div className={cls.left}>
         <h1>
           Успей освоить <br/>
-          востребованную <p>IT-профессию</p>
+          востребованную <p>IT-профессию.</p>
         </h1>
         <div className={cls.buttons}>
-          <button onClick={() => scrollContacts()}>
+          <button onClick={() => scrollGetConsultation()}>
             Получить консультацию
           </button>
         </div>

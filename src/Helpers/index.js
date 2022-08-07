@@ -21,7 +21,14 @@ export const scrollAboutUs = () => {
 
 export const scrollContacts = () => {
   window.scroll({
-    top: 2000,
+    top: 2500,
+    behavior: 'smooth'
+  })
+}
+
+export const scrollGetConsultation = () => {
+  window.scroll({
+    top: 1500,
     behavior: 'smooth'
   })
 }
